@@ -12,7 +12,7 @@ public class MultiDimensionalArray {
         7 8 9
          */
         //syntax
-        int[][] arr= new int[3][2]; //adding number of rows is mandatory
+        int[][] arr= new int[3][3]; //adding number of rows is mandatory
         // hard syntax
         int [][] arr2 = {
                 {1, 2, 3},
@@ -25,6 +25,20 @@ public class MultiDimensionalArray {
             for (int col = 0; col < arr[row].length; col++) {
                 arr[row][col] = sc.nextInt();
             }
+        }// output for 2-D array
+        for (int row = 0; row < arr.length; row++) {
+            for (int col = 0; col < arr[row].length; col++) {
+                System.out.print(arr[row][col] + " ");
+            }
+            System.out.println();
         }
+        // Enhanced for loop
+        for (int[] ints : arr) {
+            for (int col = 0; col < ints.length; col++) {
+                System.out.print(ints[col] + " ");
+            }
+            System.out.println();
+        }
+
     }
 }
