@@ -1,5 +1,5 @@
 package com.company.LeetCode;
-
+// Ques Link : // Ques Link : https://leetcode.com/problems/build-array-from-permutation/
 import java.util.Arrays;
 import java.util.Scanner;
 

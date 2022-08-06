@@ -1,5 +1,5 @@
 package com.company.LeetCode;
-
+// Ques Link : https://leetcode.com/problems/running-sum-of-1d-array/
 import java.util.Arrays;
 import java.util.Scanner;
 
