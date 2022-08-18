@@ -8,11 +8,15 @@ public class CeilingofNuminArray {
         System.out.println(ans);
     }
     static int ceilingofTarget(int[] arr,int target){
+       // if target is larger than the largest element
+       if(target > arr[arr.length-1]){
+           return -1;
+       }
         int start = 0;
         int end = arr.length -1;
         int count = 0;
         while(start<=end) {
-            //to find the middle element, mid=s+e/2 but s+e may exceed int range so we use this
+
             int mid = start + (end - start) / 2;
             count++;
             // checking conditions
@@ -26,8 +30,6 @@ public class CeilingofNuminArray {
                 return arr[mid];
             }
         }
-        // element does not exist
-      //  System.out.println(count);
         return arr[start];
     }
 }
