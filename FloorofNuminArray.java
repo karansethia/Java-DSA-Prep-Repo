@@ -7,11 +7,14 @@ public class FloorofNuminArray {
         System.out.println(ans);
     }
     static int FloorofTarget(int[] arr, int target){
+        // if target is the smaller than the smallest element of the array
+        if(target < arr[0]){
+            return -1;
+        }
         int start = 0;
         int end = arr.length -1;
         int count = 0;
         while(start<=end) {
-            //to find the middle element, mid=s+e/2 but s+e may exceed int range so we use this
             int mid = start + (end - start) / 2;
             count++;
             // checking conditions
@@ -25,8 +28,6 @@ public class FloorofNuminArray {
                 return arr[mid];
             }
         }
-        // element does not exist
-        //  System.out.println(count);
         return arr[end];
     }
 }
