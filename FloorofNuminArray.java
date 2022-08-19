@@ -3,7 +3,7 @@ package com.company;
 public class FloorofNuminArray {
     public static void main(String[] args) {
         int[] arr = {1,3,5,7,9,12};
-        int ans = FloorofTarget(arr, 4);
+        int ans = FloorofTarget(arr, 0);
         System.out.println(ans);
     }
     static int FloorofTarget(int[] arr, int target){
