@@ -1,7 +1,12 @@
 package com.company.LeetCode;
 
+import java.util.Arrays;
+
 public class SearchOccurrence {
     public static void main(String[] args) {
+        int[] nums = {5,7,7,7,7,8,8,10};
+        int[] arr = searchRange(nums,7);
+        System.out.println(Arrays.toString(arr));
 
     }
     static int[] searchRange(int[] nums,int target){
@@ -9,6 +14,7 @@ public class SearchOccurrence {
 
         // check for first occurence of target
         int start = search(nums, target, true);
+        // check for last occurence of target
         int end = search(nums, target,false);
         ans[0] = start;
         ans[1] = end;
@@ -30,10 +36,10 @@ public class SearchOccurrence {
             else{
                 ans = mid;
                 if(findStart){
-                    end = mid -1;
+                    end = mid -1;  // To check if more target lies before current position
                 }
                 else{
-                    start = mid +1;
+                    start = mid +1; // To check if more target lies after current position
                 }
             }
         }
