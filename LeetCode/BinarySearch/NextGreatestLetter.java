@@ -1,4 +1,4 @@
-package com.company.LeetCode;
+package com.company.LeetCode.BinarySearch;
 // Ques Link : https://leetcode.com/problems/find-smallest-letter-greater-than-target/
 public class NextGreatestLetter {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.company.LeetCode;
+package com.company.LeetCode.BinarySearch;
 //Ques Link : https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/
 public class RotatedBS {
     public static void main(String[] args) {

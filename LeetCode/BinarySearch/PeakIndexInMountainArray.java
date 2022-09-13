@@ -1,4 +1,4 @@
-package com.company.LeetCode;
+package com.company.LeetCode.BinarySearch;
 // Ques Link : https://leetcode.com/problems/peak-index-in-a-mountain-array/submissions/
 public class PeakIndexInMountainArray {
     public static void main(String[] args) {
