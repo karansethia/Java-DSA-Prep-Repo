@@ -15,7 +15,7 @@ public class InifiniteArray {
         while(target > arr[end]){
             int newStart = end + 1;
             // doubling the box value
-            end = end + (end - start +1);  // end = previous end + sizeofbox*2
+            end = end + (end - start +1)*2;  // end = previous end + sizeofbox*2
             start = newStart;
         }
         return binarySearch(arr, target,start,end);
