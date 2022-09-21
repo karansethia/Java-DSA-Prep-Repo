@@ -6,6 +6,7 @@ public class RotatedBS {
         int ans = search(arr,6);
         System.out.println(ans);
     }
+    //this will not work in duplicate values
     static int search(int[] nums, int target){
         int pivot = pivot(nums);
         if(pivot == -1){
