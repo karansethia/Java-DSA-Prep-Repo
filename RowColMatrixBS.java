@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Arrays;
 
-public class RowColMatrix {
+public class RowColMatrixBS {
     public static void main(String[] args) {
         int[][] matrix = {
                 {10,20,30,40},
