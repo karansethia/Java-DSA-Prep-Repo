@@ -16,7 +16,6 @@ public class SelectionSortAlgo {
             int maxElement = getMax(arr,0, last);
             // swap the max element to the element at its correct index
             swap(arr, maxElement, last);
-            
         }
     }
 
