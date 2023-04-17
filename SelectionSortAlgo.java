@@ -7,7 +7,6 @@ public class SelectionSortAlgo {
     int[] arr = {2,1,4,5,3};
     selection(arr);
         System.out.println(Arrays.toString(arr));
-
     }
     static void selection(int[] arr){
         for (int i = 0; i < arr.length; i++) {
@@ -18,7 +17,6 @@ public class SelectionSortAlgo {
             swap(arr, maxElement, last);
         }
     }
-
     private static int getMax(int[] arr, int start, int end) {
         int max = start;
         for (int i = start; i <= end; i++) {
@@ -27,7 +25,6 @@ public class SelectionSortAlgo {
             }
         }
         return max;
-
     }
     static void swap(int[] arr, int first, int second) {
         int temp = arr[first];
