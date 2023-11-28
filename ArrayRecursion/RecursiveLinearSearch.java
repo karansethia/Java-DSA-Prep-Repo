@@ -7,12 +7,12 @@ public class RecursiveLinearSearch {
         System.out.println(index);
     }
     static int search(int[] nums,int index, int target){
-     if(index == nums.length){
-         return -1;
-     }
-     if(nums[index] == target){
-         return index;
-     }
-     return search(nums,index+1,target);
+        if(index == nums.length){
+            return -1;
+        }
+        if(nums[index] == target){
+            return index;
+        }
+        return search(nums,index+1,target);
     }
 }
