@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class BubbleSortAlgo {
     public static void main(String[] args) {
-//        int[] arr = {3,5,1,2,4};
-        int[] arr = {1,2,3,4,5};
+        int[] arr = {3,5,1,2,4};
+//        int[] arr = {1,2,3,4,5};
         bubbleSort(arr);
         System.out.println("Final Ans: "+Arrays.toString(arr));
     }
