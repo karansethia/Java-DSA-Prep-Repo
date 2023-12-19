@@ -16,9 +16,10 @@ public class Main {
 //        mustang.price = 80000;
 //        mustang.engine = "V8";
 //        mustang.name = "Ford Mustang GT500";
-        System.out.println(mustang);
+//        System.out.println(mustang);
         mustang.greeting();
-
+        Car someCar = new Car();
+        System.out.println(someCar.name);
     }
 }
 // creating a class
@@ -33,6 +34,15 @@ class Car {
         this.engine = engine;
         this.seats = seats;
         this.price = price;
+        // caling a function inside of another constructor
+        this.message();
+    }
+    Car(){
+    // calling constructor inside of another constructor
+        this("Ford GT","V6",2,155000);
+    }
+    void message(){
+        System.out.println("Keep roaring that engine");
     }
     void greeting(){
         System.out.println("The name of the car is "+this.name);
