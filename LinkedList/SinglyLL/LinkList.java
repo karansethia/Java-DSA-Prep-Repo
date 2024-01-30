@@ -1,4 +1,4 @@
-package com.company.LinkedList;
+package com.company.LinkedList.SinglyLL;
 
 public class LinkList {
 

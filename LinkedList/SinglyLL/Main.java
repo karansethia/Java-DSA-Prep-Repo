@@ -1,6 +1,6 @@
-package com.company.LinkedList;
+package com.company.LinkedList.SinglyLL;
 
-import org.w3c.dom.Node;
+import com.company.LinkedList.SinglyLL.LinkList;
 
 public class Main {
     public static void main(String[] args) {
