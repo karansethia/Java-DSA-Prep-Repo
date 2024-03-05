@@ -32,11 +32,16 @@ public class CustomCircularQueue {
         if(isEmpty()){
             return -1;
         }
-        int removed = data[front];
-        int pointer = 0;
-        while(pointer != end){
-            data[]
+        int removed = data[front++];
+       front = front % data.length;
+       size--;
+       return removed;
+    }
+    public int front(){
+        if(isEmpty()){
+            return -1;
         }
+        return data[0];
     }
     public void display() {
         for (int i = 0; i < data.length; i++) {
